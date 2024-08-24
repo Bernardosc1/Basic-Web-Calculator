@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; 
+}
+
+
+.header-box {
+    background-color: rgb(87, 87, 87);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem; 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; 
+    gap: 30px; 
+}
+
+
+.image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+.forms-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+
+.input {
+    width: 80px;
+    height: 40px;
+    font-size: 1rem; 
+    padding: 0 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+
+.btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+
+button {
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(67, 67, 67); 
+}
+
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+#resultado {
+    font-size: 1.5rem; 
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .input-box {
+        flex-direction: column;
+    }
+
+    .btn-box {
+        flex-direction: column; 
+    }
+
+    .image {
+        width: 100px; 
+        height: 100px; 
+    }
+
+    .title {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem; 
+    }
+
+    .input {
+        height: 35px; 
+        font-size: 0.9rem; 
+    }
+
+    button {
+        padding: 8px 16px; 
+        font-size: 0.9rem; 
+    }
+
+    #resultado {
+        font-size: 1.2rem; 
+    }
+}
